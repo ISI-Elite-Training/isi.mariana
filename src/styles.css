@@ -16,3 +16,12 @@ p {
 a {
   color: dodgerblue;
 }
+
+.mariana-iframe {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
