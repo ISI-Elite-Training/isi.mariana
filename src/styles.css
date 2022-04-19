@@ -14,7 +14,7 @@ body {
 
 h1 {
   color: #000;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 55px;
 }
 
@@ -26,6 +26,7 @@ h1 {
   margin: auto;
   height: auto;
   width: 100%;
+  max-width: 1000px;
 }
 
 p {
@@ -59,49 +60,56 @@ a {
   */
 }
 
-
 .nav-bar {
-  z-index: 9999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFF;
-    color: #000;
-    text-align: center;
-    height: 55px;
-    display: flex;
-    padding: 8px;
-    justify-content: left;
-    align-content: center;
-    align-items: center;
-    transition: all .4s ease-in-out;
+  z-index: 9000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  height: 55px;
+  display: flex;
+  padding: 8px;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.container-fluid {
+  max-width: 1000px !important;
 }
 
 nav {
-    color: #000 !important;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 13px;
-    font-family: "Helvetica", sans-serif;
+  color: #000 !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 13px;
+  font-family: 'Helvetica', sans-serif;
 }
 
 nav a {
-    align-self: center;
-    text-decoration: none;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
+  align-self: center;
+  text-decoration: none;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-    color: black;
+  color: black;
 }
 
-.logo {
-  display: block
+.logo svg {
+  z-index: 9999;
+  display: block;
+  width: 130px;
+  height: auto;
 }
