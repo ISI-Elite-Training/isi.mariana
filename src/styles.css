@@ -6,9 +6,10 @@ html {
 }
 
 body {
+  position: relative;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: auto;
   box-sizing: border-box;
 }
 
@@ -21,12 +22,20 @@ h1 {
 .main {
   position: relative;
   z-index: 2;
-  padding-top: '120px !important';
+  padding-top: '140px !important';
   padding: 20px;
   margin: auto;
   height: auto;
   width: 100%;
   max-width: 1000px;
+}
+
+.container-lg {
+  padding-top: 80px !important;
+}
+
+.navbar-light {
+  background-color: #fff !important;
 }
 
 p {
@@ -110,6 +119,54 @@ nav a:active {
 .logo svg {
   z-index: 9999;
   display: block;
-  width: 130px;
+  width: 140px;
   height: auto;
+}
+
+/* NAVBAR ALT */
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.7s;
+}
+
+.navbar-toggle .top-bar {
+  transform: translateX(3px) rotate(135deg);
+  transform-origin: 40% 200%;
+}
+
+.navbar-toggle .mid-bar {
+  opacity: 0;
+}
+
+.navbar-toggle .bot-bar {
+  transform: translateX(3px) rotate(-135deg);
+  transform-origin: 40% -80%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .mid-bar {
+  opacity: 1;
+}
+
+.navbar-toggle.collapsed .bot-bar {
+  transform: rotate(0);
+}
+
+.collapse {
+  background-color: #fff;
+  margin: 0px;
+  padding: 15px;
+  width: 100vw;
+}
+
+.collaps a {
+  padding-top: 10px;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
 }
