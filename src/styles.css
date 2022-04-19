@@ -4,16 +4,22 @@ body {
   height: 100vh;
   width: 100vw;
 
-  overflow: hidden;
+  overflow: scroll;
 
   padding: 0;
   margin: 0;
 }
 
 h1 {
-  color: hotpink;
-  font-family: cursive;
+  color: #000;
+  font-family: "Helvetica", sans-serif;
   font-size: 55px;
+}
+
+.main {
+  padding-top: '80px !important';
+  padding: 20px;
+  margin: auto;
 }
 
 p {
@@ -22,14 +28,16 @@ p {
 }
 
 a {
-  color: dodgerblue;
+  color: #000;
 }
 
 .mariana-iframe {
-  height: auto;
-  width: auto;
+  z-index: auto;
+  height: 100%;
+  width: 100%;
   padding: 0;
-  margin: 0;
+  /* padding-top: '80px !important'; */
+  margin: auto;
   border: none;
   background-color: transparent;
 }
@@ -42,4 +50,45 @@ a {
   top: 0;
   left: 0;
   */
+}
+
+
+.nav-bar {
+  z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: all .4s ease-in-out;
+}
+
+nav {
+    color: #000 !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 13px;
+    font-family: "Helvetica", sans-serif;
+}
+
+nav a {
+    align-self: center;
+    text-decoration: none;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: black;
 }
