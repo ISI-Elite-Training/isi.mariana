@@ -79,10 +79,6 @@ a {
   transition: all 0.4s ease-in-out;
 }
 
-.container-fluid {
-  max-width: 1000px !important;
-}
-
 nav {
   color: #000 !important;
   display: flex;
@@ -96,15 +92,19 @@ nav a {
   align-self: center;
   text-decoration: none;
   width: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 13px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 nav a:hover {
   color: black;
+}
+
+nav a:active {
+  color: #94e522 !important;
 }
 
 .logo svg {
