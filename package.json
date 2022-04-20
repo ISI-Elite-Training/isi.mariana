@@ -1,5 +1,5 @@
 {
-  "name": "parcel-app",
+  "name": "isi.mariana",
   "private": true,
   "source": "src/index.html",
   "scripts": {
@@ -14,5 +14,17 @@
   "dependencies": {
     "parcel-optimizer-friendly-urls": "^0.2.0",
     "prettier": "^2.6.2"
-  }
+  },
+  "description": "This is a vanilla web app built with [Parcel](https://parceljs.org).",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ISI-Elite-Training/isi.mariana.git"
+  },
+  "author": "Chandler Chappell <chan@ady.world>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ISI-Elite-Training/isi.mariana/issues"
+  },
+  "homepage": "https://github.com/ISI-Elite-Training/isi.mariana#readme"
 }
